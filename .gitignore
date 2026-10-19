@@ -1,0 +1,12 @@
+data/
+logs/
+tables/
+annotation_tool/
+manuscripts/
+figures/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
