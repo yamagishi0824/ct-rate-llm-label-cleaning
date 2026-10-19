@@ -12,7 +12,10 @@ This repository builds on [CT-RATE](https://huggingface.co/datasets/ibrahimhamam
 | `src/repeat_runs.py` | Repeat-run experiment on the confirmatory reference set, with per-request logs (timestamps, attempts) |
 | `src/sample_confirmatory_set.py` | Stratified sampling of the 250-report confirmatory reference set |
 | `src/evaluate_confirmatory.py` | Per-category and label-macro/micro performance, unweighted and design-weighted, report-level bootstrap |
-| `src/paired_confirmatory.py` | Exact McNemar-type tests, paired bootstrap differences, Holm correction |
+| `src/paired_confirmatory.py` | Per-category exact McNemar tests with Holm correction, paired bootstrap differences |
+| `src/permutation_tests.py` | Report-level paired permutation tests for overall comparisons |
+| `src/supplement_tables_confirmatory.py` | Per-label performance with confidence intervals (confirmatory set) |
+| `src/figures_confirmatory.py` | Confirmatory-set figures |
 | `src/sensitivity_rules.py` | Binarization rules A–D |
 | `src/intermodel_confirmatory.py` | Pairwise agreement, error correlation, leave-one-model-out |
 | `src/analyze_repeat_runs.py` | Run-to-run flip rate and Fleiss κ |
