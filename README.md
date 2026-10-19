@@ -1,7 +1,7 @@
 # LLM-assisted cleaning of report-derived labels in CT-RATE
 
 Code for the study "Large Language Model–Assisted Cleaning of Report-Derived Labels in a Large-Scale Chest CT Dataset".
-Data, refined labels, radiologist annotations, and run logs will be released separately.
+This repository builds on [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) (Hamamci et al., *Nature Biomedical Engineering*, 2026). Radiology reports and the original labels must be obtained from the CT-RATE Hugging Face repository under its terms of use. Refined labels, radiologist annotations, and run logs will be released separately.
 
 ## Contents
 
@@ -24,3 +24,32 @@ Data, refined labels, radiologist annotations, and run logs will be released sep
 
 Python version and dependencies are pinned in `.python-version`, `pyproject.toml`, and `uv.lock` (`uv sync`).
 Credentials are read from `AZURE_AI_ENDPOINT` and `AZURE_AI_KEY`; no credentials are stored in this repository.
+
+## Data
+
+- CT-RATE (reports and original labels): https://huggingface.co/datasets/ibrahimhamamci/CT-RATE
+
+## Citation
+
+If you use this code, please cite our preprint and the original CT-RATE paper.
+
+```bibtex
+@article{yamagishi2026llmlabelcleaning,
+  title   = {Large Language Model-Assisted Cleaning of Report-Derived Labels in a Large-Scale Chest CT Dataset},
+  author  = {Yamagishi, Yosuke and Takamatsu, Atsushi and Sato, Mototsugu and Kikuchi, Tomohiro and Hanaoka, Shouhei and Yoshikawa, Takeharu and Abe, Osamu},
+  journal = {arXiv preprint arXiv:2606.22382},
+  year    = {2026},
+  doi     = {10.48550/arXiv.2606.22382}
+}
+
+@article{hamamci2026ctrate,
+  title   = {Generalist foundation models from a multimodal dataset for 3D computed tomography},
+  author  = {Hamamci, Ibrahim Ethem and Er, Sezgin and Wang, Chenyu and Almas, Furkan and Simsek, Ayse Gulnihan and Esirgun, Sevval Nil and others},
+  journal = {Nature Biomedical Engineering},
+  volume  = {10},
+  number  = {8},
+  pages   = {1610--1628},
+  year    = {2026},
+  doi     = {10.1038/s41551-025-01599-y}
+}
+```
