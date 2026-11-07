@@ -1,7 +1,7 @@
 # LLM-assisted cleaning of report-derived labels in CT-RATE
 
 Code for the study "Large Language Model–Assisted Cleaning of Report-Derived Labels in a Large-Scale Chest CT Dataset".
-This repository builds on [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) (Hamamci et al., *Nature Biomedical Engineering*, 2026). Radiology reports and the original labels must be obtained from the CT-RATE Hugging Face repository under its terms of use. Refined labels, radiologist annotations, and run logs will be released separately.
+This repository builds on [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) (Hamamci et al., *Nature Biomedical Engineering*, 2026). Radiology reports and the original labels must be obtained from the CT-RATE Hugging Face repository under its terms of use. Refined labels and radiologist annotations are available at [YYama0/CT-RATE-Refined](https://huggingface.co/datasets/YYama0/CT-RATE-Refined).
 
 ## Contents
 
@@ -31,6 +31,7 @@ Credentials are read from `AZURE_AI_ENDPOINT` and `AZURE_AI_KEY`; no credentials
 ## Data
 
 - CT-RATE (reports and original labels): https://huggingface.co/datasets/ibrahimhamamci/CT-RATE
+- Refined labels and radiologist annotations (this study): https://huggingface.co/datasets/YYama0/CT-RATE-Refined
 
 ## Citation
 
